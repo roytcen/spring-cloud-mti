@@ -1,2 +1,4 @@
 # SMusic
-Nukkit 
+Nukkit Plugin.Redstone Music.
+
+This Plugin Uses [Not
