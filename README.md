@@ -1,4 +1,4 @@
 # SMusic
 Nukkit Plugin.Redstone Music.
 
-This Plugin Uses [Not
+This Plugin Uses [NoteBlockAPI](https://github.com/xxmicloxx/NoteBlo
