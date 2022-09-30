@@ -50,3 +50,49 @@ object Interpolator {
             if (dx[i] < 0) {
                 throw IllegalArgumentException("X must be sorted")
             }
+            dy[i] = y[i + 1] - y[i]
+            slope[i] = dy[i] / dx[i]
+            intercept[i] = y[i] - x[i] * slope[i]
+        }
+
+        // Perform the interpolation here
+        val yi = DoubleArray(xi.size)
+        for (i in xi.indices) {
+            if (xi[i] > x[x.size - 1] || xi[i] < x[0]) {
+                yi[i] = java.lang.Double.NaN
+            } else {
+                var loc = Arrays.binarySearch(x, xi[i])
+                if (loc < -1) {
+                    loc = -loc - 2
+                    yi[i] = slope[loc] * xi[i] + intercept[loc]
+                } else {
+                    yi[i] = y[loc]
+                }
+            }
+        }
+
+        return yi
+    }
+
+    @Throws(IllegalArgumentException::class)
+    fun interpLinear(x: LongArray, y: DoubleArray, xi: LongArray): DoubleArray {
+
+        val xd = DoubleArray(x.size)
+        for (i in x.indices) {
+            xd[i] = x[i].toDouble()
+        }
+
+        val xid = DoubleArray(xi.size)
+        for (i in xi.indices) {
+            xid[i] = xi[i].toDouble()
+        }
+
+        return interpLinear(xd, y, xid)
+    }
+
+    fun interpLinear(xy: DoubleArray, xx: Double): Double {
+        if (xy.size % 2 != 0) {
+            throw IllegalArgumentException("XY must be divisible by two.")
+        }
+        val x = DoubleArray(xy.size / 2)
+        val y = DoubleArray(x.size)
