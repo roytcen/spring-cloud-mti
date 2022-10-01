@@ -96,3 +96,13 @@ object Interpolator {
         }
         val x = DoubleArray(xy.size / 2)
         val y = DoubleArray(x.size)
+        for (i in xy.indices) {
+            if (i % 2 == 0) {
+                x[i / 2] = xy[i]
+            } else {
+                y[i / 2] = xy[i]
+            }
+        }
+        return interpLinear(x, y, doubleArrayOf(xx))[0]
+    }
+}
