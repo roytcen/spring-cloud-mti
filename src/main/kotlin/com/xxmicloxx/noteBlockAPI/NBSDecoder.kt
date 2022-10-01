@@ -4,4 +4,5 @@ import java.io.*
 import java.util.*
 
 object NBSDecoder {
-    fun parse(dec
+    fun parse(decodeFile: File, title: String): Song {
+        re
