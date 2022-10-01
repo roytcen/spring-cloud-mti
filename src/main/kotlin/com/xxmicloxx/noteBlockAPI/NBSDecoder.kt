@@ -1,4 +1,7 @@
 package com.xxmicloxx.noteBlockAPI
 
 import java.io.*
-impo
+import java.util.*
+
+object NBSDecoder {
+    fun parse(dec
