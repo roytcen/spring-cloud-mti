@@ -5,4 +5,4 @@ import java.util.*
 
 object NBSDecoder {
     fun parse(decodeFile: File, title: String): Song {
-        re
+        return parse(FileInputStream(decodeFile), decodeFile
