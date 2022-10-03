@@ -8,4 +8,5 @@ object NBSDecoder {
         return parse(FileInputStream(decodeFile), decodeFile, title)
     }
 
-    private fun parse(inputStream: InputStream, decodeFile: File, title2:
+    private fun parse(inputStream: InputStream, decodeFile: File, title2: String): Song {
+        val layerHashMap =
