@@ -8,4 +8,4 @@ object NBSDecoder {
         return parse(FileInputStream(decodeFile), decodeFile, title)
     }
 
-    private fun parse(inputStre
+    private fun parse(inputStream: InputStream, decodeFile: File, title2:
