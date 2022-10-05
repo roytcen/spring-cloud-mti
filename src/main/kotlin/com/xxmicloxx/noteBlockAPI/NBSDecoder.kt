@@ -12,4 +12,6 @@ object NBSDecoder {
         val layerHashMap = HashMap<Int, Layer>()
         val dis = DataInputStream(inputStream)
         val length = readShort(dis)
-        val songHeight = readShort
+        val songHeight = readShort(dis)
+        var title = readString(dis)
+        if (t
