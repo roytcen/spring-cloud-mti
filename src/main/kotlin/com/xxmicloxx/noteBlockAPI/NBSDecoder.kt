@@ -11,4 +11,5 @@ object NBSDecoder {
     private fun parse(inputStream: InputStream, decodeFile: File, title2: String): Song {
         val layerHashMap = HashMap<Int, Layer>()
         val dis = DataInputStream(inputStream)
-        val length = read
+        val length = readShort(dis)
+        val songHeight = readShort
