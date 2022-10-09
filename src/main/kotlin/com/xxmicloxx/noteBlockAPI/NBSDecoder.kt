@@ -14,4 +14,5 @@ object NBSDecoder {
         val length = readShort(dis)
         val songHeight = readShort(dis)
         var title = readString(dis)
-        if (t
+        if (title == "") {
+            title = t
