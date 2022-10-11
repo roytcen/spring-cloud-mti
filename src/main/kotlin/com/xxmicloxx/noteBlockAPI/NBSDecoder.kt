@@ -17,4 +17,6 @@ object NBSDecoder {
         if (title == "") {
             title = title2
         }
-        val author = r
+        val author = readString(dis)
+        readString(dis)
+        val des
