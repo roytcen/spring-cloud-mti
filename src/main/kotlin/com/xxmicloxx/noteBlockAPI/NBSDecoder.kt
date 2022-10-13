@@ -20,4 +20,5 @@ object NBSDecoder {
         val author = readString(dis)
         readString(dis)
         val description = readString(dis)
-        val speed = rea
+        val speed = readShort(dis) / 100f
+        dis.readBoo
