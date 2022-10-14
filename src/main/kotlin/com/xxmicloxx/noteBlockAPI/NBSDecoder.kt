@@ -25,4 +25,6 @@ object NBSDecoder {
         dis.readByte()
         dis.readByte()
         readInt(dis)
-        readInt
+        readInt(dis)
+        readInt(dis)
+        readInt(dis
