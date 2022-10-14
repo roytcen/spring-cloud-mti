@@ -23,4 +23,6 @@ object NBSDecoder {
         val speed = readShort(dis) / 100f
         dis.readBoolean()
         dis.readByte()
-        dis.readByte(
+        dis.readByte()
+        readInt(dis)
+        readInt
