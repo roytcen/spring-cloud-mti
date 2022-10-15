@@ -27,4 +27,7 @@ object NBSDecoder {
         readInt(dis)
         readInt(dis)
         readInt(dis)
-        readInt(dis
+        readInt(dis)
+        readInt(dis)
+        readString(dis)
+        v
