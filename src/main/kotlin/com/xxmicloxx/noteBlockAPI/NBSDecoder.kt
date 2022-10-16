@@ -30,4 +30,6 @@ object NBSDecoder {
         readInt(dis)
         readInt(dis)
         readString(dis)
-        v
+        var tick: Int = -1
+        while (true) {
+   
