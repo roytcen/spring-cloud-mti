@@ -34,4 +34,6 @@ object NBSDecoder {
         while (true) {
             val jumpTicks = readShort(dis)
             if (jumpTicks.toInt() == 0) {
-                br
+                break
+            }
+            tick += jum
