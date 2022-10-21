@@ -33,4 +33,5 @@ object NBSDecoder {
         var tick: Int = -1
         while (true) {
             val jumpTicks = readShort(dis)
-            if
+            if (jumpTicks.toInt() == 0) {
+                br
