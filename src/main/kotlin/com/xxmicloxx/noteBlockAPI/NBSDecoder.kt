@@ -38,4 +38,5 @@ object NBSDecoder {
             }
             tick += jumpTicks
             var layer: Int = -1
-            whi
+            while (true) {
+                val jumpLayers = readSho
