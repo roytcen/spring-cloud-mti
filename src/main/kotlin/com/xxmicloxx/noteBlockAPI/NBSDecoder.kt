@@ -36,4 +36,6 @@ object NBSDecoder {
             if (jumpTicks.toInt() == 0) {
                 break
             }
-            tick += jum
+            tick += jumpTicks
+            var layer: Int = -1
+            whi
