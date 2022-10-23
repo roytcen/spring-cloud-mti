@@ -40,4 +40,6 @@ object NBSDecoder {
             var layer: Int = -1
             while (true) {
                 val jumpLayers = readShort(dis)
-                if (jumpLayers.toInt() == 
+                if (jumpLayers.toInt() == 0) {
+                    break
+           
