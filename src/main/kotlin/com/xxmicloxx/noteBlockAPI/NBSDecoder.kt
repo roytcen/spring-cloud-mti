@@ -42,4 +42,5 @@ object NBSDecoder {
                 val jumpLayers = readShort(dis)
                 if (jumpLayers.toInt() == 0) {
                     break
-           
+                }
+                layer += jumpLay
