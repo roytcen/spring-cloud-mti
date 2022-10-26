@@ -43,4 +43,5 @@ object NBSDecoder {
                 if (jumpLayers.toInt() == 0) {
                     break
                 }
-                layer += jumpLay
+                layer += jumpLayers
+                setNote(layer, tic
