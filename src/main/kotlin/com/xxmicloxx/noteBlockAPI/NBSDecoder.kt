@@ -47,4 +47,4 @@ object NBSDecoder {
                 setNote(layer, tick, dis.readByte().toInt(), dis.readByte(), layerHashMap)
             }
         }
-        retu
+        return Song(speed, layerHashMap, songHeight, len
