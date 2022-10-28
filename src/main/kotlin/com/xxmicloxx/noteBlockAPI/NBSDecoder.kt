@@ -47,4 +47,4 @@ object NBSDecoder {
                 setNote(layer, tick, dis.readByte().toInt(), dis.readByte(), layerHashMap)
             }
         }
-        return Song(speed, layerHashMap, songHeight, len
+        return Song(speed, layerHashMap, songHeight, length, title, author, description, decode
