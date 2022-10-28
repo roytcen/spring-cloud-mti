@@ -44,4 +44,7 @@ object NBSDecoder {
                     break
                 }
                 layer += jumpLayers
-                setNote(layer, tick, dis.readByte().toInt(), dis.readByte(), la
+                setNote(layer, tick, dis.readByte().toInt(), dis.readByte(), layerHashMap)
+            }
+        }
+        retu
