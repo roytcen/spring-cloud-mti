@@ -50,4 +50,5 @@ object NBSDecoder {
         return Song(speed, layerHashMap, songHeight, length, title, author, description, decodeFile)
     }
 
-    private fun setNote(layer: Int, ticks: Int, instrument: Int, key: Byte, layerHashM
+    private fun setNote(layer: Int, ticks: Int, instrument: Int, key: Byte, layerHashMap: HashMap<Int, Layer>) {
+        var l
