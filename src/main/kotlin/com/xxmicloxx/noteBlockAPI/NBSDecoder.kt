@@ -51,4 +51,5 @@ object NBSDecoder {
     }
 
     private fun setNote(layer: Int, ticks: Int, instrument: Int, key: Byte, layerHashMap: HashMap<Int, Layer>) {
-        var l
+        var l: Layer? = layerHashMap[layer]
+        if (
