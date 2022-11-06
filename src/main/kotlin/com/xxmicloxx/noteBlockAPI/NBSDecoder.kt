@@ -56,4 +56,6 @@ object NBSDecoder {
             l = Layer()
             layerHashMap[layer] = l
         }
-    
+        l.setNote(ticks, Note(instrument, key))
+    }
+
