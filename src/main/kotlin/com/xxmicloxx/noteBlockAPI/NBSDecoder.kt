@@ -60,4 +60,4 @@ object NBSDecoder {
     }
 
     @Throws(IOException::class)
-    private fun 
+    private fun readShort(dis: DataInputStream): Shor
