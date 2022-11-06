@@ -54,4 +54,6 @@ object NBSDecoder {
         var l: Layer? = layerHashMap[layer]
         if (l == null) {
             l = Layer()
-        
+            layerHashMap[layer] = l
+        }
+    
