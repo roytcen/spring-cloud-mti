@@ -59,3 +59,5 @@ object NBSDecoder {
         l.setNote(ticks, Note(instrument, key))
     }
 
+    @Throws(IOException::class)
+    private fun 
