@@ -60,4 +60,5 @@ object NBSDecoder {
     }
 
     @Throws(IOException::class)
-    private fun readShort(dis: DataInputStream): Shor
+    private fun readShort(dis: DataInputStream): Short {
+        val byte1 = dis.readUnsignedByte()
