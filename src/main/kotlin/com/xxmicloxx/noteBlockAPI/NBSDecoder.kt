@@ -62,3 +62,5 @@ object NBSDecoder {
     @Throws(IOException::class)
     private fun readShort(dis: DataInputStream): Short {
         val byte1 = dis.readUnsignedByte()
+        val byte2 = dis.readUnsignedByte()
+      
