@@ -63,4 +63,4 @@ object NBSDecoder {
     private fun readShort(dis: DataInputStream): Short {
         val byte1 = dis.readUnsignedByte()
         val byte2 = dis.readUnsignedByte()
-      
+        return (byte1 + (byte2 shl 8)).toShort
