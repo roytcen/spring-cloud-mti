@@ -69,4 +69,5 @@ object NBSDecoder {
     @Throws(IOException::class)
     private fun readInt(dis: DataInputStream): Int {
         val byte1 = dis.readUnsignedByte()
-        val byt
+        val byte2 = dis.readUnsignedByte()
+        v
