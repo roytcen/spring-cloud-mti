@@ -67,4 +67,5 @@ object NBSDecoder {
     }
 
     @Throws(IOException::class)
-    private fun rea
+    private fun readInt(dis: DataInputStream): Int {
+       
