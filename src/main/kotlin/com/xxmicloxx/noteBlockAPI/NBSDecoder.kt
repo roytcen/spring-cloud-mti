@@ -72,3 +72,4 @@ object NBSDecoder {
         val byte2 = dis.readUnsignedByte()
         val byte3 = dis.readUnsignedByte()
         val byte4 = dis.readUnsignedByte()
+        return byte1 + (byte2 shl 8) + (by
