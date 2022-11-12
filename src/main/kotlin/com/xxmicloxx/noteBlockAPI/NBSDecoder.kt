@@ -70,4 +70,5 @@ object NBSDecoder {
     private fun readInt(dis: DataInputStream): Int {
         val byte1 = dis.readUnsignedByte()
         val byte2 = dis.readUnsignedByte()
-        v
+        val byte3 = dis.readUnsignedByte()
+       
