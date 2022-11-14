@@ -76,4 +76,5 @@ object NBSDecoder {
     }
 
     @Throws(IOException::class)
-    private fun readString(dis:
+    private fun readString(dis: DataInputStream): String {
+        var length = readI
