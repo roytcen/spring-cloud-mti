@@ -75,4 +75,5 @@ object NBSDecoder {
         return byte1 + (byte2 shl 8) + (byte3 shl 16) + (byte4 shl 24)
     }
 
-    @Throws
+    @Throws(IOException::class)
+    private fun readString(dis:
