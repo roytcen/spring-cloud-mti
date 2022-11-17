@@ -81,4 +81,6 @@ object NBSDecoder {
         val sb = StringBuilder(length)
         while (length > 0) {
             var c = dis.readByte().toChar()
-            if (c == 
+            if (c == 0x0D.toChar()) {
+                c = ' '
+          
