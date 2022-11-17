@@ -79,4 +79,5 @@ object NBSDecoder {
     private fun readString(dis: DataInputStream): String {
         var length = readInt(dis)
         val sb = StringBuilder(length)
-        whi
+        while (length > 0) {
+            var c = dis.r
