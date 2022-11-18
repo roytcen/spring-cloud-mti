@@ -83,4 +83,6 @@ object NBSDecoder {
             var c = dis.readByte().toChar()
             if (c == 0x0D.toChar()) {
                 c = ' '
-          
+            }
+            sb.append(c)
+         
