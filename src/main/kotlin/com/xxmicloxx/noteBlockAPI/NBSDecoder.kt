@@ -85,4 +85,8 @@ object NBSDecoder {
                 c = ' '
             }
             sb.append(c)
-         
+            --length
+        }
+        return sb.toString()
+    }
+}
