@@ -2,4 +2,4 @@ package com.xxmicloxx.noteBlockAPI
 
 import cn.nukkit.level.Sound
 
-clas
+class Note(instrument: Int, val key: Byte) 
