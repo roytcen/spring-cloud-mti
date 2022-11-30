@@ -6,4 +6,5 @@ class Note(instrument: Int, val key: Byte) {
     private var instrument = 0
     val sound: Sound
         get() {
-            ret
+            return when (getInstrument()) {
+                0 -> Sound.NOTE_H
