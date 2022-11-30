@@ -7,4 +7,5 @@ class Note(instrument: Int, val key: Byte) {
     val sound: Sound
         get() {
             return when (getInstrument()) {
-                0 -> Sound.NOTE_H
+                0 -> Sound.NOTE_HARP
+                1 -> Sound.NOTE_B
