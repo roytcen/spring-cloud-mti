@@ -12,4 +12,6 @@ class Note(instrument: Int, val key: Byte) {
                 2 -> Sound.NOTE_SNARE
                 3 -> Sound.NOTE_HAT
                 4 -> Sound.NOTE_BASSATTACK
-     
+                else -> Sound.NOTE_HARP
+            }
+ 
