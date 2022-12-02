@@ -14,4 +14,8 @@ class Note(instrument: Int, val key: Byte) {
                 4 -> Sound.NOTE_BASSATTACK
                 else -> Sound.NOTE_HARP
             }
- 
+        }
+
+    init {
+        when (instrument) {
+   
