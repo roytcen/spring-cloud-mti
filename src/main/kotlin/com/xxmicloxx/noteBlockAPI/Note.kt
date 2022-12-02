@@ -19,4 +19,5 @@ class Note(instrument: Int, val key: Byte) {
     init {
         when (instrument) {
             1 -> this.instrument = 4
-            2 -> this.ins
+            2 -> this.instrument = 1
+            3 -> this.instrument =
