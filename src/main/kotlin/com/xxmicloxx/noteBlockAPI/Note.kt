@@ -20,4 +20,6 @@ class Note(instrument: Int, val key: Byte) {
         when (instrument) {
             1 -> this.instrument = 4
             2 -> this.instrument = 1
-            3 -> this.instrument =
+            3 -> this.instrument = 2
+            4 -> this.instrument = 3
+     
