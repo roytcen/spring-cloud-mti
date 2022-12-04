@@ -23,4 +23,8 @@ class Note(instrument: Int, val key: Byte) {
             3 -> this.instrument = 2
             4 -> this.instrument = 3
             else -> this.instrument = instrument
-      
+        }
+    }
+
+    fun getInstrument(): Int {
+        re
