@@ -28,3 +28,5 @@ class Note(instrument: Int, val key: Byte) {
 
     fun getInstrument(): Int {
         return if (instrument > 4) 0 else instrument
+    }
+}
