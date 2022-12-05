@@ -26,3 +26,47 @@ import java.util.*
 
 class SMusic : PluginBase() {
     init {
+        instance = this
+    }
+
+    override fun onLoad() {
+        this.dataFolder.mkdirs()
+        File(this.dataFolder.absolutePath + "/songs/").mkdirs()
+        LanguageUtils.load(this, TITLE)
+        LanguageUtils.saveMainConfig(this)
+        masterConfig = Config(this.dataFolder.absolutePath + "/config.yml", Config.YAML)
+        playMode = masterConfig["PlayMode"].toString().toInt()
+        showMusicList = masterConfig["ShowMusicList"].toString().toBoolean()
+        this.server.logger.info("smusic.load.info" translate arrayOf())
+    }
+
+    override fun onEnable() {
+        this.server.pluginManager.registerEvents(PlayerListener(), this)
+        this.server.commandMap.register("music", MusicCommand())
+        loadAllSong()
+        this.server.scheduler.scheduleAsyncTask(this, MusicPlayingTask())
+        this.server.logger.info("smusic.enable.info" translate arrayOf())
+    }
+
+    companion object {
+        const val LIST_LOOP_PLAY = 1
+        const val SINGLE_SONG_LOOP_PLAY = 2
+        const val RANDOM_PLAY = 3
+        const val TITLE = "§l§7|§bS§dM§au§cs§1i§2c§7| §6"
+        lateinit var masterConfig: Config
+        var playing = true
+        lateinit var instance: SMusic
+        val songs = arrayListOf<Song>()
+        val songPlayers = hashMapOf<String, Player>()
+        var playMode = LIST_LOOP_PLAY
+        private var song: Song? = null
+        private var tick = -1
+        private var lastPlayed: Long = 0
+        var showMusicList = true
+
+        fun broadcast() {
+            if (!playing) return
+            if (song == null) this.nextSong()
+            if (System.currentTimeMillis() - lastPlayed < 50 * song!!.delay) return
+            tick++
+            if (tick > song!!.length) {
