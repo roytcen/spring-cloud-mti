@@ -117,3 +117,50 @@ class SMusic : PluginBase() {
         }
 
         fun loadSong(file: File) {
+            val name = file.name.replace(".nbs", "")
+            songs.add(NBSDecoder.parse(file, name))
+            if (showMusicList) instance.server.logger.info("smusic.music.load.single.success" translate arrayOf(name))
+        }
+
+        fun sendSound(player: Player, song: Song, tick: Int) {
+            for (l in song.layerHashMap.values) {
+                val note = l.getNote(tick) ?: continue
+                val pitch = note.key - 33
+                val pk = BlockEventPacket()
+                pk.case1 = note.getInstrument()
+                pk.case2 = pitch
+                pk.x = player.position.x.toInt()
+                pk.y = player.position.y.toInt()
+                pk.z = player.position.z.toInt()
+                val sp = PlaySoundPacket()
+                sp.name = note.sound.sound
+                sp.x = player.position.x.toInt()
+                sp.y = player.position.y.toInt()
+                sp.z = player.position.z.toInt()
+                sp.volume = 1f
+                sp.pitch = Math.pow(2.0, (pitch - 12.0) / 12.0).toFloat()
+                Server.getInstance().batchPackets(arrayOf(player), arrayOf(pk, sp))
+            }
+        }
+
+        fun previous() {
+            when (playMode) {
+                LIST_LOOP_PLAY -> {
+                    lastSong()
+                    tick = -1
+                    instance.server.logger.info("smusic.music.playing" translate arrayOf(song!!.title))
+                }
+                RANDOM_PLAY -> {
+
+                }
+            }
+        }
+
+        fun next() {
+            when (playMode) {
+                RANDOM_PLAY, LIST_LOOP_PLAY -> {
+                    nextSong()
+                    tick = -1
+                    instance.server.logger.info("smusic.music.playing" translate arrayOf(song!!.title))
+                }
+                SINGLE_SONG_LOOP_PLAY -> {
