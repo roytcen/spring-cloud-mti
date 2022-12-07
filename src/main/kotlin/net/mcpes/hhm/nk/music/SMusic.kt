@@ -70,3 +70,50 @@ class SMusic : PluginBase() {
             if (System.currentTimeMillis() - lastPlayed < 50 * song!!.delay) return
             tick++
             if (tick > song!!.length) {
+                next()
+            }
+            songPlayers.forEach { _, u ->
+                if (!u.isOnline) songPlayers.remove(u.name)
+                sendSound(u, song!!, tick)
+            }
+            lastPlayed = System.currentTimeMillis()
+        }
+
+        fun nextSong() {
+            if (playMode == RANDOM_PLAY) {
+                var random = Random().nextInt(songs.size)
+                while (songs[random] === song) {
+                    random = Random().nextInt(songs.size)
+                }
+                return
+            }
+            if (!songs.contains(song)) {
+                this.song = songs[0]
+                return
+            }
+            if (songs.indexOf(song) >= songs.size - 1) {
+                this.song = songs[0]
+                return
+            }
+            this.song = songs[songs.indexOf(song) + 1]
+        }
+
+        fun lastSong() {
+            if (!songs.contains(song)) {
+                this.song = songs[0]
+                return
+            }
+            if (songs.indexOf(song) < 1) {
+                this.song = songs[songs.size - 1]
+                return
+            }
+            this.song = songs[songs.indexOf(song) - 1]
+        }
+
+        fun loadAllSong() {
+            val lists = File(SMusic.instance.dataFolder.absolutePath + "/songs/").listFiles() ?: return
+            lists.filter { it.name.endsWith(".nbs") }.forEach(this::loadSong)
+            instance.server.logger.info("smusic.music.load.all.success" translate arrayOf(songs.size.toString()))
+        }
+
+        fun loadSong(file: File) {
