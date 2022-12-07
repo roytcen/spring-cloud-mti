@@ -164,3 +164,10 @@ class SMusic : PluginBase() {
                     instance.server.logger.info("smusic.music.playing" translate arrayOf(song!!.title))
                 }
                 SINGLE_SONG_LOOP_PLAY -> {
+                    tick = -1
+                    instance.server.logger.info("smusic.music.stillPlaying" translate arrayOf(song!!.title))
+                }
+            }
+        }
+    }
+}
