@@ -36,3 +36,43 @@ class MusicCommand : Command("music", "SMusic Master Command") {
                     sender.sendMessage("smusic.command.notPlayer" translate arrayOf())
                     return true
                 }
+                SMusic.songPlayers.remove(sender.name)
+                sender.sendMessage("smusic.command.pause.success" translate arrayOf())
+            }
+            "加载", "load" -> {
+                if (!sender.isOp) {
+                    sender.sendMessage("smusic.command.notOp" translate arrayOf())
+                    return false
+                }
+                if (strings.size == 2) {
+                    val file = File(SMusic.instance.dataFolder.absolutePath + "/songs/" + strings[1] + ".nbs")
+                    if (file.exists()) {
+                        SMusic.loadSong(file)
+                        sender.sendMessage("smusic.command.load.success" translate arrayOf(strings[1]))
+                    } else {
+                        sender.sendMessage("smusic.command.load.notExists" translate arrayOf(strings[1]))
+                    }
+                } else {
+                    sender.sendMessage("smusic.command.notFound" translate arrayOf())
+                }
+            }
+            "下一首", "next" -> {
+                if (!sender.isOp) {
+                    sender.sendMessage("smusic.command.notOp" translate arrayOf())
+                    return true
+                }
+                if (strings.size != 1) {
+                    sender.sendMessage("smusic.command.notFound" translate arrayOf())
+                    return false
+                }
+                SMusic.next()
+            }
+            "上一首", "previous" -> {
+                if (!sender.isOp) {
+                    sender.sendMessage("smusic.command.notOp" translate arrayOf())
+                    return true
+                }
+                if (strings.size != 1) {
+                    sender.sendMessage("smusic.command.notFound" translate arrayOf())
+                    return false
+                }
