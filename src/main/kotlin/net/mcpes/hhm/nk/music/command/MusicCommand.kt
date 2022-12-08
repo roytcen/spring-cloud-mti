@@ -76,3 +76,49 @@ class MusicCommand : Command("music", "SMusic Master Command") {
                     sender.sendMessage("smusic.command.notFound" translate arrayOf())
                     return false
                 }
+                if (SMusic.playMode == RANDOM_PLAY) {
+                    sender.sendMessage("smusic.command.previous.random" translate arrayOf())
+                } else {
+                    SMusic.previous()
+                }
+            }
+            "播放", "play" -> {
+                if (!sender.isOp) {
+                    sender.sendMessage("smusic.command.notOp" translate arrayOf())
+                    return false
+                }
+                if (strings.size == 2) {
+                    when (strings[1]) {
+                        "开启", "on" -> {
+                            SMusic.playing = true
+                            sender.sendMessage("smusic.command.play.on" translate arrayOf())
+                        }
+                        "关闭", "off" -> {
+                            SMusic.playing = false
+                            sender.sendMessage("smusic.command.play.off" translate arrayOf())
+                        }
+                        else -> {
+                            sender.sendMessage("smusic.command.notFound" translate arrayOf())
+                            return false
+                        }
+                    }
+                }
+            }
+            "帮助", "help" -> {
+                if (!sender.isOp) {
+                    sender.sendMessage("smusic.command.help.player" translate arrayOf())
+                } else {
+                    sender.sendMessage("smusic.command.help.admin" translate arrayOf())
+                }
+            }
+            "info" -> {
+                sender.sendMessage("smusic.command.copyright" translate arrayOf(SMusic.instance.fullName))
+            }
+            else -> {
+                sender.sendMessage("smusic.command.notFound" translate arrayOf())
+                return false
+            }
+        }
+        return true
+    }
+}
