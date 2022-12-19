@@ -13,4 +13,6 @@ import net.mcpes.hhm.nk.music.SMusic
  * @author hhm Copyright (c) 2019/2/19 15:09
  * version 1.0
  */
-class PlayerListe
+class PlayerListener : Listener {
+    @EventHandler
+    fun onJoi
