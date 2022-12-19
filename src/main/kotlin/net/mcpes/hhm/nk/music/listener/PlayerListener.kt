@@ -11,4 +11,6 @@ import net.mcpes.hhm.nk.music.SMusic
  *
  * Package: net.mcpes.hhm.nk.music.listener
  * @author hhm Copyright (c) 2019/2/19 15:09
- *
+ * version 1.0
+ */
+class PlayerListe
