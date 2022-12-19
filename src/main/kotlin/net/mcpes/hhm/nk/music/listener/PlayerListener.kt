@@ -10,4 +10,5 @@ import net.mcpes.hhm.nk.music.SMusic
  * SMusic-New
  *
  * Package: net.mcpes.hhm.nk.music.listener
- * @author h
+ * @author hhm Copyright (c) 2019/2/19 15:09
+ *
