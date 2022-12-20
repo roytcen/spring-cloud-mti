@@ -15,4 +15,5 @@ import net.mcpes.hhm.nk.music.SMusic
  */
 class PlayerListener : Listener {
     @EventHandler
-    fun onJoi
+    fun onJoin(event: PlayerJoinEvent) {
+        
