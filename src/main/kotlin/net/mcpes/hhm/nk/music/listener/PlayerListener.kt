@@ -16,4 +16,8 @@ import net.mcpes.hhm.nk.music.SMusic
 class PlayerListener : Listener {
     @EventHandler
     fun onJoin(event: PlayerJoinEvent) {
-        SMusic.songPlayers[event.player.name] = e
+        SMusic.songPlayers[event.player.name] = event.player
+    }
+
+    @EventHandler
+  
