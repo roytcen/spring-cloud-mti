@@ -20,4 +20,5 @@ class PlayerListener : Listener {
     }
 
     @EventHandler
-  
+    fun onQuit(event: PlayerQuitEvent) {
+       
