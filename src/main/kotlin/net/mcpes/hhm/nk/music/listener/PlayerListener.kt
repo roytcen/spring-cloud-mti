@@ -21,4 +21,4 @@ class PlayerListener : Listener {
 
     @EventHandler
     fun onQuit(event: PlayerQuitEvent) {
-       
+        SMusic.songPlayers.remove(event.player.name)
