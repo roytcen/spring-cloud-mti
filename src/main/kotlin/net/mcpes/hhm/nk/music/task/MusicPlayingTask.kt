@@ -1,1 +1,4 @@
-package net.mcpes.hhm.nk.music
+package net.mcpes.hhm.nk.music.task
+
+import cn.nukkit.Server
+import cn.nukk
