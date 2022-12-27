@@ -7,4 +7,5 @@ import net.mcpes.hhm.nk.music.SMusic
 /**
  * SMusic-New
  *
- * Package: net.mcpes.hhm.nk
+ * Package: net.mcpes.hhm.nk.music.task
+ * @author hhm Copyright 
