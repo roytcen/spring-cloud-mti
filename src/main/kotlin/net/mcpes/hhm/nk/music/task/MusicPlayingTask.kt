@@ -8,4 +8,7 @@ import net.mcpes.hhm.nk.music.SMusic
  * SMusic-New
  *
  * Package: net.mcpes.hhm.nk.music.task
- * @author hhm Copyright 
+ * @author hhm Copyright (c) 2019/2/19 15:46
+ * version 1.0
+ */
+class Mus
