@@ -13,4 +13,5 @@ import net.mcpes.hhm.nk.music.SMusic
  */
 class MusicPlayingTask : AsyncTask() {
     override fun onRun() {
-       
+        while (Server.getInstance().isRunning) {
+            
