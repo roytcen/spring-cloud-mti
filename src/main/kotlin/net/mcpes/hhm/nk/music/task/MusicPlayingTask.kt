@@ -11,4 +11,6 @@ import net.mcpes.hhm.nk.music.SMusic
  * @author hhm Copyright (c) 2019/2/19 15:46
  * version 1.0
  */
-class Mus
+class MusicPlayingTask : AsyncTask() {
+    override fun onRun() {
+       
