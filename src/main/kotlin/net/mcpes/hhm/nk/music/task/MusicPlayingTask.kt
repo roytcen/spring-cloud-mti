@@ -16,4 +16,6 @@ class MusicPlayingTask : AsyncTask() {
         while (Server.getInstance().isRunning) {
             Thread.sleep(20)
             if (SMusic.playing && SMusic.songPlayers.isNotEmpty()) {
-      
+                SMusic.broadcast()
+            }
+  
