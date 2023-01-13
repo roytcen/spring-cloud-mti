@@ -18,4 +18,6 @@ class MusicPlayingTask : AsyncTask() {
             if (SMusic.playing && SMusic.songPlayers.isNotEmpty()) {
                 SMusic.broadcast()
             }
-  
+        }
+    }
+}
