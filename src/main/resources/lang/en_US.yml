@@ -1,4 +1,5 @@
 smusic.load.info: "%TITLEloaded successfully!"
 smusic.enable.info: "%TITLEstarted successfully!"
 
-smusic.music.load.single.success: "%TITLEmusic %1 loaded 
+smusic.music.load.single.success: "%TITLEmusic %1 loaded successfully!"
+smusic.music.load.all.succ
