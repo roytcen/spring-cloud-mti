@@ -7,4 +7,4 @@ smusic.music.load.all.success: "%TITLEa total of %1 music is loaded!"
 smusic.music.playing: "%TITLENow the music is %1."
 smusic.music.stillPlaying: "%TITLEStill plays: %1"
 
-smusic.command.notFound: "%TITLE§c co
+smusic.command.notFound: "%TITLE§c command input error, please enter /
