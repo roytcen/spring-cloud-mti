@@ -8,4 +8,5 @@ smusic.music.playing: "%TITLENow the music is %1."
 smusic.music.stillPlaying: "%TITLEStill plays: %1"
 
 smusic.command.notFound: "%TITLE§c command input error, please enter /music help to view help!"
-smusic.command.
+smusic.command.notPlayer: "%TITLE§c you are not a player!"
+smus
