@@ -11,4 +11,5 @@ smusic.command.notFound: "%TITLE§c command input error, please enter /music hel
 smusic.command.notPlayer: "%TITLE§c you are not a player!"
 smusic.command.notOp: "%TITLE§c you don't have permission!"
 smusic.command.pause.success: "%TITLEPaused successfully!"
-smusic.command.start.success: 
+smusic.command.start.success: "%TITLEStarted playing successfully!"
+smusic.c
