@@ -12,4 +12,4 @@ smusic.command.notPlayer: "%TITLE§c you are not a player!"
 smusic.command.notOp: "%TITLE§c you don't have permission!"
 smusic.command.pause.success: "%TITLEPaused successfully!"
 smusic.command.start.success: "%TITLEStarted playing successfully!"
-smusic.c
+smusic.command.load.success: "%TITLELoad Music: %1 Success
