@@ -14,4 +14,4 @@ smusic.command.pause.success: "%TITLEPaused successfully!"
 smusic.command.start.success: "%TITLEStarted playing successfully!"
 smusic.command.load.success: "%TITLELoad Music: %1 Success!"
 smusic.command.load.notExists: "%TITLELoad music: %1 failed: the file does not exist!"
-smusic.c
+smusic.command.previous.random: "%TITLE§c can't play the
