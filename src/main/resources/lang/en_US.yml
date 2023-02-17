@@ -17,4 +17,4 @@ smusic.command.load.notExists: "%TITLELoad music: %1 failed: the file does not e
 smusic.command.previous.random: "%TITLE§c can't play the last one under random play!"
 smusic.command.play.on: "%TITLEsuccessfully turned on all server 's players playback!"
 smusic.command.play.off: "%TITLEsuccessfully turned off all server 's players playback!"
-smusic.command.help.player: "%TITLEHelp\n§a/music pause Pause playback\n§b/music
+smusic.command.help.player: "%TITLEHelp\n§a/music pause Pause playback\n§b/music help View help\n§c/music info View plugin autho
