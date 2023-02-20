@@ -18,4 +18,4 @@ smusic.command.previous.random: "%TITLE§c can't play the last one under random 
 smusic.command.play.on: "%TITLEsuccessfully turned on all server 's players playback!"
 smusic.command.play.off: "%TITLEsuccessfully turned off all server 's players playback!"
 smusic.command.help.player: "%TITLEHelp\n§a/music pause Pause playback\n§b/music help View help\n§c/music info View plugin author information"
-smusic.command.help.admin: "%TITLEHelp\n
+smusic.command.help.admin: "%TITLEHelp\n§a/music pause Pause playback\n§b/music help Vie
