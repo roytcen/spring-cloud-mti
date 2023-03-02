@@ -1,1 +1,2 @@
-smusic.load.in
+smusic.load.info: "%TITLE加载成功!"
+smusic.enable.info: "%TITLE启动成功
