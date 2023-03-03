@@ -2,4 +2,6 @@ smusic.load.info: "%TITLE加载成功!"
 smusic.enable.info: "%TITLE启动成功!"
 
 smusic.music.load.single.success: "%TITLE音乐%1加载成功!"
-smusic.music.load.all.success: "%TITLE音乐加载完成
+smusic.music.load.all.success: "%TITLE音乐加载完成,共加载%1首音乐!"
+
+smusic.music.playing: "%TITLE现在
