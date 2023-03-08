@@ -16,3 +16,4 @@ smusic.command.load.success: "%TITLE加载音乐:%1成功!"
 smusic.command.load.notExists: "%TITLE加载音乐:%1失败:文件不存在!"
 smusic.command.previous.random: "%TITLE§c在随机播放下,不能播放上一首!"
 smusic.command.play.on: "%TITLE成功开启全服务器的播放功能!"
+smusic.command.play.off: "%TITLE成功关闭全服务器的播放功能!
