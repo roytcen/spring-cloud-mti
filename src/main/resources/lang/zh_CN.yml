@@ -19,4 +19,4 @@ smusic.command.play.on: "%TITLE成功开启全服务器的播放功能!"
 smusic.command.play.off: "%TITLE成功关闭全服务器的播放功能!"
 smusic.command.help.player: "%TITLE帮助\n§a/music pause 暂停播放\n§b/music help 查看帮助\n§c/music info 查看插件作者信息"
 smusic.command.help.admin: "%TITLE帮助\n§a/music pause 暂停播放\n§b/music help 查看帮助\n§c/music info 查看插件作者信息\n§d/music next 播放下一首\n§e/music previous 播放上一首\n§1/music play <on/off> 调整服务器播放状态"
-smusic.command.copyrig
+smusic.command.copyright: "%TITLE版权信息:\n插件: %1\n§6作者:hh
