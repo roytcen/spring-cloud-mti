@@ -2,4 +2,4 @@ smusic.load.info: "%TITLE加載成功!"
 smusic.enable.info: "%TITLE啟動成功!"
 
 smusic.music.load.single.success: "%TITLE音樂%1加載成功!"
-smus
+smusic.music.load.all.success: "%TITLE音樂加載完成,共加載%1
