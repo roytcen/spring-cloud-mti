@@ -5,4 +5,6 @@ smusic.music.load.single.success: "%TITLE音樂%1加載成功!"
 smusic.music.load.all.success: "%TITLE音樂加載完成,共加載%1首音樂!"
 
 smusic.music.playing: "%TITLE現在正在播放:%1"
-sm
+smusic.music.stillPlaying: "%TITLE仍然播放:%1"
+
+smusic.co
