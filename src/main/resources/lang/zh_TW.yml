@@ -7,4 +7,4 @@ smusic.music.load.all.success: "%TITLE音樂加載完成,共加載%1首音樂!"
 smusic.music.playing: "%TITLE現在正在播放:%1"
 smusic.music.stillPlaying: "%TITLE仍然播放:%1"
 
-smusic.co
+smusic.command.notFound: "%TITLE§c命令輸入錯誤,請輸入/music help查看幫助!"
