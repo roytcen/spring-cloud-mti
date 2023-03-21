@@ -10,4 +10,5 @@ smusic.music.stillPlaying: "%TITLE仍然播放:%1"
 smusic.command.notFound: "%TITLE§c命令輸入錯誤,請輸入/music help查看幫助!"
 smusic.command.notPlayer: "%TITLE§c你不是一個玩家!"
 smusic.command.notOp: "%TITLE§c你沒有權限!"
-smusic.command.pause.success: "%TITL
+smusic.command.pause.success: "%TITLE成功暫停播放!"
+smusic.command.start.success: "%TITLE
