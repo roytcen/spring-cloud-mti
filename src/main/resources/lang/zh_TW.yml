@@ -13,4 +13,5 @@ smusic.command.notOp: "%TITLE§c你沒有權限!"
 smusic.command.pause.success: "%TITLE成功暫停播放!"
 smusic.command.start.success: "%TITLE成功開始播放!"
 smusic.command.load.success: "%TITLE加載音樂:%1成功!"
-smusic.command.load.notExis
+smusic.command.load.notExists: "%TITLE加載音樂:%1失敗:文件不存在!"
+smusic.comman
