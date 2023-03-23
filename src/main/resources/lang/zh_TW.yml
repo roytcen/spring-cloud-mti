@@ -12,4 +12,5 @@ smusic.command.notPlayer: "%TITLE§c你不是一個玩家!"
 smusic.command.notOp: "%TITLE§c你沒有權限!"
 smusic.command.pause.success: "%TITLE成功暫停播放!"
 smusic.command.start.success: "%TITLE成功開始播放!"
-smusic.command.load.success: "%TITLE
+smusic.command.load.success: "%TITLE加載音樂:%1成功!"
+smusic.command.load.notExis
