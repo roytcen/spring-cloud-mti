@@ -17,4 +17,5 @@ smusic.command.load.notExists: "%TITLE加載音樂:%1失敗:文件不存在!"
 smusic.command.previous.random: "%TITLE§c在隨機播放下,不能播放上一首!"
 smusic.command.play.on: "%TITLE成功開啟全服務器的播放功能!"
 smusic.command.play.off: "%TITLE成功關閉全服務器的播放功能!"
-smusic.command.help.player: "%TITLE幫助\n§a/music pause 暫停播放\n§b/music help 查看幫助\n§c/mu
+smusic.command.help.player: "%TITLE幫助\n§a/music pause 暫停播放\n§b/music help 查看幫助\n§c/music info 查看插件作者信息"
+smusic.command.help.ad
