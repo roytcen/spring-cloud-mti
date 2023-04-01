@@ -1,3 +1,5 @@
 name: "SMusic"
 version: "1.0.0"
-api:
+api: ["1.0.0"]
+author: "hhm"
+description: "Redstone Music,By hh
