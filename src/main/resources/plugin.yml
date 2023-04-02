@@ -4,4 +4,5 @@ api: ["1.0.0"]
 author: "hhm"
 description: "Redstone Music,By hhm"
 load: "POSTWORLD"
-main: "net.mcpes.hhm.nk.mu
+main: "net.mcpes.hhm.nk.music.SMusic"
+depend: ["SPluginBase"]
